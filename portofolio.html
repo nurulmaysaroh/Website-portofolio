@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desainer Estetik</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: pink;
+            color: #333;
+        }
+
+        header {
+            background: url('hero-image.jpg') center/cover no-repeat;
+            height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        .about,
+        .portfolio,
+        .services,
+        .contact {
+            margin: 4rem 0;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #333;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .about p {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            width: calc(33% - 2rem);
+            text-align: center;
+        }
+
+        .service-card h3 {
+            color: #FFD700;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            background: #FFD700;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact button:hover {
+            background: #333;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 4rem;
+        }
+
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#about">Tentang Saya</a>
+        <a href="#portfolio">Portofolio</a>
+        <a href="#services">Resume</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+
+    <header>
+        <div>
+            <div>
+                <img src="images/poto profil.jpeg" class="rounded-circle" alt="Thaniea Luqizahwa" width="300"
+                    height="150">
+            </div>
+            <h1>Selamat Datang</h1>
+            <p>Silahkan berkunjung di website ini!</p>
+        </div>
+    </header>
+
+
+    <section id="about" class="about">
+        <h2>Tentang Saya</h2>
+        <p>Saya merupakan seorang mahasiswa yang masih berkuliah di Sekolah Tinggi Teknologi Terpadu Nurul Fikri. Saya
+            mengambil jurusan Teknik Informatika yang berfokus pada Software Engineer, Data Engineer, Network
+            Engineer dan Cyber Security. Saya sendiri mengambil fokus kepada Software Engineer dan Network Engineer.
+            Saya sudah 2 tahun menjadi mahasiswa di sini dan sekarang saya berada di semester 5. Saya mampu bekerja
+            dengan tim, memiliki komunikasi yang efektif, pekerja keras, dan keingintahuan intelektual yang
+            tinggi. </p>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Portofolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <a href="https://www.linkedin.com/posts/nurul-maysaroh-240956258_berikut-projek-uas-membuat-web-organisasi-activity-7085518718067224577-Oj5r?utm_source=share&utm_medium=member_desktop"
+                    target="_blank">
+                    <img src="images/porto1.jpg" alt="Deskripsi Gambar">
+                </a>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://www.linkedin.com/posts/nurul-maysaroh-240956258_httpslnkding94uvr4v-activity-7019153813349572608-Mcyn?utm_source=share&utm_medium=member_desktop"
+                    target="_blank">
+                    <img src="images/porto3.jpg" alt="Deskripsi Gambar">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="col-md-10 heading-section text-center ftco-animate">
+
+            <h2 class="mb-4">Resume</h2>
+            <p> Berikut adalah sumber informasi yang tepat tentang saya meliputi: keahlian saya, pengalaman saya, dan
+                riwayat pendidikan saya.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Keahlian</h3>
+            <p>Saya menguasai dasar-dasar Microsoft office (MS.Word, MS.Exel, MS. Power Point), UI / UX, Design Grafis,
+                dan Dasar-dasar Pemograman. Saya juga mampu bekerja dalam tim dan bertanggung jawab.</p>
+
+
+        </div>
+        <div class="service-card">
+            <h3>Pengalaman</h3>
+            <p>Saya berpengalaman menjadi panitia acara Pemilihan Ketua Organisasi kampus,
+                panitia acara Camp Ramadhan, Voulunter pedulybogor, dan Voulunter pada acara Milad HNI ke-12.</p>
+        </div>
+        <div class="service-card">
+            <h3>Pendidikan</h3>
+            <p>2022 - Sekarang : Sekolah Tinggi Teknologi Terpadu Nurul Fikri</p>
+            <p> 2019 - 2022 : SMAS PLUS CENDIKIA - CIKEAS</p>
+            <p>2016 - 2019 : SMP Tahfidz Ar-Rasyid</p>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Kontak</h2>
+        <form action="#">
+            <input type="text" placeholder="Nama" required>
+            <input type="email" placeholder="Email" required>
+            <textarea rows="5" placeholder="Pesan Anda" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 <a href="https://www.instagram.com/rulmae_?igsh=ODg4ZzdnaHRudWN4">Ikuti saya di media sosial</a>.
+        </p>
+    </footer>
+</body>
+
+</html>
